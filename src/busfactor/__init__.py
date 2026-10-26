@@ -1,0 +1,1 @@
+"""Find the parts of a Git repository that only one person knows."""

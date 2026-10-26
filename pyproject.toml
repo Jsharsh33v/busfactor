@@ -1,0 +1,22 @@
+[project]
+name = "busfactor"
+version = "0.1.0"
+description = "Find the parts of a Git repository that only one person knows."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "rich>=13.7",
+    "typer>=0.12",
+]
+
+[project.scripts]
+busfactor = "busfactor.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
